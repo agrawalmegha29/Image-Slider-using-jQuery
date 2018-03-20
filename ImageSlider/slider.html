@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="slider.js"></script>
+</head>
+<style>
+#slider-main {width:600px; 
+	height:300px; 
+	border: solid; 
+	border-radius: 10px; 
+	padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#slider-wrapper	{width:600px; 
+	height:300px; 
+	border: solid; 
+	border-radius: 10px; 
+	padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+#slider	{width:600px;
+	height:300px; 
+	position:absolute;
+}
+.slidepicture {width:600px;
+	height:300px; 
+	position:absolute;
+}
+#nav {margin-top:20px; 
+	width:100%;
+}
+#image-previous	{float:left;
+	position:relative;
+	padding-top: 100px;
+	opacity: 0.5;
+}
+#image-next	{
+	float: right;
+	position: relative;
+	padding-top: 100px;
+	opacity: 0.5;
+}
+.slidepicture .text {
+    position:absolute;
+    top:10px;
+    left:10px;
+    width:300px;
+	color:black;
+	font-style:italic;
+}
+</style>
+
+<body>
+	<center>
+			<div id="slider-wrapper">
+					<div id="slider">
+						<div class="slidepicture"><img src="image1.jpg" alt="NYC Image 1" height="300px" width="600px" id="slide-one"><div class="text"><p>NYC Empire State - Right</p></div></div>
+						<div class="slidepicture"><img src="image2.jpg" alt="NYC Image 2" height="300px" width="600px" id="slide-two"><div class="text"><p>NYC Empire State - Front</p></div></div>
+						<div class="slidepicture"><img src="image3.jpg" alt="NYC Image 3" height="300px" width="600px" id="slide-three"><div class="text"><p>NYC Statue of Liberty - Night</p></div></div>
+						<div class="slidepicture"><img src="image4.jpg" alt="NYC Image 4" height="300px" width="600px" id="slide-four"><div class="text"><p>NYC Freedom Tower - Front</p></div></div>
+						<div class="slidepicture"><img src="image5.jpg" alt="NYC Image 5" height="300px" width="600px" id="slide-five"><div class="text"><p>NYC Empire State - Left</p></div></div>
+						<div class="slidepicture"><img src="image6.jpg" alt="NYC Image 6" height="300px" width="600px" id="slide-six"><div class="text"><p>NYC Downtown - Twilight</p></div></div>
+					</div>
+				<div id="nav">
+					<img src="prev.png" id="image-previous" alt="prevImage" height="60px" width="60px">
+					<img src="next.png" id="image-next" alt="nextImage" height="60px" width="60px">
+				</div>
+			</div>
+			<div id="navNumber">
+				<tr> <td><img src="Num1.png" id="image-one"></td> &nbsp &nbsp <td><img src="Num2.png" id="image-two"></td> &nbsp &nbsp <td><img src="Num3.png" id="image-three"></td> &nbsp &nbsp <td><img src="Num4.png" id="image-four"></td> &nbsp &nbsp <td><img src="Num5.png" id="image-five"></td> &nbsp &nbsp <td><img src="Num6.png" id="image-six"></td></tr>
+			</div>
+	</center>
+</body>
+</html>
